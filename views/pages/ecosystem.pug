@@ -1,0 +1,75 @@
+extends ../partials/layout.pug
+include ../partials/mixins.pug
+
+block content
+  include ../partials/nav.pug
+
+  header.vision
+    h1.page-title Ecosystem
+
+  .vision-wrapper
+    +breadbrumbs('Home', 'Ecosystem')
+
+    .vision-content
+      <div>
+      h4 Ecosystem is the future
+      p Rather than today separate systems for job matching, we strive for a digital ecosystem where services from different vendors can flourish together making superior opportunities for jobseekers and employers.
+        In the heart of the ecosystem there are a number of core components which is described below.
+        We are convinced that competition leads to better customer services. By providing these ecosystem core components we hope today competition continues, but at a higher level and faster pace.
+
+
+      .container-fluid.components
+        .row
+          .col-sm-3
+            p
+          .col-sm-9
+            h5 <b>Jobstore</b>
+            p In order to make it easier for employers and jobseekers we will provide an online catalog for the digital services. We call it Jobstore.
+
+        p
+
+        .row
+          .col-sm-3
+            img(src='images/skills.png')
+          .col-sm-9
+            h5 <b>Skills taxonomy</b>
+            p When matching employers demand with jobseekers profile, it is crucial to use a common description of skills. Therefore a skills taxonomy is one of the core components.
+
+        p
+
+        .row
+          .col-sm-3
+            img(src='images/cv.png')
+          .col-sm-9
+            h5 <b>CV handler</b>
+            p We believe people want to own their personal data; no matter what digital service they use. And we are quite sure that soon people will claim rights to easily move their data between digital services. We aim to develop a CV handler with a “edit once –update everywhere” concept. A concept that allows your CV data to be accessible from every digital service in the ecosystem, but only by the one person holding the key - namely you.
+
+        p
+
+        .row
+          .col-sm-3
+            img(src='images/job_hub.png')
+          .col-sm-9
+            h5 <b>Vacancy hub</b>
+            p When it comes to vacancies, we think it would be great if digital service providers could offer employers with the opportunity to easily reach the whole labor market. This we will make possible with a vacancy hub.
+
+        p
+
+        .row
+          .col-sm-3
+            img(src='images/engine.png')
+          .col-sm-9
+            h5 <b>Matching engine</b>
+            p The most sophisticated core component is the matching engine. Unlike a search engine, it handles both the request and the offer. The underlying data comes from the CV handler, the Vacancy hub, and the Skills taxonomy.
+
+        p
+
+        .row
+          .col-sm-3
+            p
+          .col-sm-9
+            h5 <b>Jobtech Developer</b>
+            p The Jobtech Developer website is a toolbox that will contain access and support for the ecosystem core components. But already you will find several open assets and other developer resources on the website.
+            p
+            p Happy coding!
+            p The Jobtech Developer team

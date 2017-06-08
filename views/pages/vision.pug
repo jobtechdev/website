@@ -1,0 +1,43 @@
+extends ../partials/layout.pug
+include ../partials/mixins.pug
+
+block content
+  include ../partials/nav.pug
+
+  header.vision
+    h1.page-title Vision
+
+  .vision-wrapper
+    +breadbrumbs('Home', 'Vision')
+
+    .vision-content
+      <div>
+      p <b>It´s quite simple.</b>
+
+      p Every day a person goes to a job they dislike or have no job to go to at all, is a loss. Not only for the individual, but also for the employer who has the potential to grow if they find the right person. This Sweden can not afford. 
+
+      p We belive in using technology to let people connect in new ways. It will help people find their dream job and it will make employers find top candidates easier. By this our collective talents are better used and Sweden becomes a better place to live in.
+
+      h4 Guiding principles
+
+      p No matter what we do, these principles will guide us:
+      li Collaborate: Work with others, they know something you do not know.
+      li Diversity by design: Everyone is unique; one-size solution does not fit all. 
+      li Keep it simple: If people understand, they can contribute.
+      </div>
+      //- p This site is developed by the Swedish Public Employment Service, Arbetsförmedlingen.
+
+      //- p For most people, work is an important part of life. We want to, in collaboration with others, create new services that meet the needs of the future labor market.
+
+      //- p The first step was taken in September 2016. A debate articel in a <a href="https://www.svd.se/af-snart-hittar-du-manga-fler-jobb-hos-oss">Swedish newpaper</a> on the subject, this blog entry from <a href="https://www.forumoppnadata.se/blogg/apier-gor-arbetsformedlingen-till-digitalt-matchningsnav/">Internetstiftelsen</a> is a bit more detailed.
+
+      //- p Intentions and thoughts about the Ecosystem (In Swedish)
+      //- //- br
+
+      //- .embed-responsive.embed-responsive-16by9
+        iframe.embed-responsive-item(src="https://www.youtube.com/embed/nTld0imEJtA?ecver=2")
+      //- b.video-title Broader vision about the future labour market (In Swedish)
+
+      //- .embed-responsive.embed-responsive-16by9
+        iframe.embed-responsive-item(src="https://www.youtube.com/embed/8iYaRdIoXQk?ecver=2")
+      //- b.video-title Intentions and thoughts about the Ecosystem (In Swedish)
