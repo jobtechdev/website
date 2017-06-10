@@ -5,17 +5,27 @@
   "main": "index.js",
   "watch": {
     "compile-scss": {
-      "patterns": ["styles"],
+      "patterns": [
+        "styles"
+      ],
       "extensions": "scss"
     },
     "compile-pug": {
-      "patterns": ["views"],
+      "patterns": [
+        "views"
+      ],
       "extensions": "pug"
     },
     "copy-images": {
-      "patterns": ["images"],
+      "patterns": [
+        "images"
+      ],
       "extensions": "png,jpg"
     }
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/jobtechdev/website.git"
   },
   "scripts": {
     "compile-scss": "node-sass --output-style compressed -o dist/styles styles",
