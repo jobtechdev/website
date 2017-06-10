@@ -5,7 +5,7 @@
 Make sure you have Node.js and npm installed.
 
 ```bash
-$ git clone https://github.com/simon-johansson/jobtech-developer.git && cd jobtech-developer
+$ git clone https://github.com/jobtechdev/website.git && cd website
 $ npm install
 ```
 
