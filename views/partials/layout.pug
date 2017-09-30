@@ -31,3 +31,55 @@ html(lang="en")
                 $('.navbar-default .container-fluid').toggleClass('dark-bg');
             });
         });
+
+    d(id='login-box' class='login-popup')
+        a(href='#' class='login_close')
+            img(src='/images/close_pop.png' class='login_btn_close' title='Close Window' alt='Close')
+        form(method='post' class='signin' action='#')
+            fieldset(class='textbox')
+                label(class='username')
+                    span Username or email
+                    input(id='username' name='username' value='' type='text' autocomplete='on' placeholder='Username')
+                label(class='password')
+                    span Password
+                    input(id='password' name='pasword' value='' type='password' placeholder='Password')
+                button(class='submit login_button' type='button') Sign in
+                d
+                 img(src='/images/google.png' height='25' width='25')
+                p
+                 a(class='forgot' href='#') Forgot your password?
+
+    script.
+        $(document).ready(function() {
+            $('a.login-window').click(function () {
+
+                //Getting the variable's value from a link
+                var loginBox = $(this).attr('href');
+
+                //Fade in the Popup
+                $(loginBox).fadeIn(300);
+
+                //Set the center alignment padding + border see css style
+                var popMargTop = ($(loginBox).height() + 24) / 2;
+                var popMargLeft = ($(loginBox).width() + 24) / 2;
+
+                $(loginBox).css({
+                    'margin-top': -popMargTop,
+                    'margin-left': -popMargLeft
+                });
+
+                // Add the mask to body
+                $('body').append('<div id="mask"></div>');
+                $('#mask').fadeIn(300);
+
+                return false;
+            });
+
+            // When clicking on the button close or the mask layer the popup closed
+            $(document).on('click','a.login_close, #mask', function () {
+                $('#mask , .login-popup').fadeOut(300, function () {
+                    $('#mask').remove();
+                });
+                return false;
+            });
+        });

@@ -1,0 +1,18 @@
+extends ../partials/layout.pug
+include ../partials/mixins.pug
+
+block content
+    include ../partials/nav.pug
+    header.products
+        h1.page-title Login
+    .main.container
+        .row
+            .col-md-6.col-md-offset-3
+                form(method='POST' action='/login')
+                    div.form-group
+                        label(for='email') Email
+                        input.form-control( id='email' placeholder='email' name='email')
+                    div.form-group
+                        label(for='password') Password
+                        input.form-control(type='password' id='password' placeholder='password' name='password')
+                    button.btn.btn-primary() Log in
