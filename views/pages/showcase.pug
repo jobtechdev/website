@@ -1,6 +1,8 @@
 extends ../partials/layout.pug
 include ../partials/mixins.pug
 
+
+
 block content
   include ../partials/nav.pug
 
@@ -16,3 +18,7 @@ block content
       .col-sm-6.col-md-4.col-lg-3
         a(href="http://historik.azurewebsites.net" target="_blank")
           +puff('history-analysis-puff.jpg', 'Historical Data Analysis', 'Make smarter decisions with past data on job trends in various industry sectors', 'APPLICATION')
+
+      .col-sm-6.col-md-4.col-lg-3
+          a(href="https://github.com/jobtechdev/vacancieswidget" target="_blank")
+            +puff('widget.png','Job Postings','Add Job postings list to your site in minutes.','VACANCIES WIDGET','GITHUB')
