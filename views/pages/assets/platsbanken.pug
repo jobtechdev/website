@@ -25,6 +25,9 @@ block content
           | (PDF in Swedish)
         a(href="https://www.arbetsformedlingen.se/download/18.40fa4e7b159ff029331706ca/1486976282357/teknisk-beskrivning-lediga-jobb.pdf" download)
           .button.download Download
+      .downloadable
+        p
+          a(href='/swagger' target='_blank') Swagger API View
 
       .note
         p NOTE: You can decide which format should be returned with the request header. <br> For JSON, the http request header must contain: “Accept: application/json” or else it will return xml.
