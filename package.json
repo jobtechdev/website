@@ -31,9 +31,11 @@
     "compile-scss": "node-sass --output-style compressed -o dist/styles styles",
     "compile-pug": "pug --output-style compressed -o dist/ views/pages",
     "copy-images": "copyfiles \"./images/**\" dist && copyfiles favicon.ico dist",
+    "copy-swagger": "copyfiles \"./swagger/**\" dist",
     "reload": "browser-sync start --server \"dist\" --files \"./dist/**\" --extensions \"html\"",
     "watch": "npm-watch",
-    "compile": "rimraf dist/ && npm run compile-pug && npm run compile-scss && npm run copy-images"
+    "compile": "rimraf dist/ && npm run compile-pug && npm run compile-scss && npm run copy-images && npm run copy-swagger"
+
   },
   "author": "Simon Johansson <simon.johansson@screeninteraction.com>",
   "license": "ISC",
