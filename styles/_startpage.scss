@@ -85,10 +85,10 @@
 .jumbotron {
   margin-top: -85px;
   margin-bottom: 0px;
-  height: 430px;
+  height: 200px;
   background-image: url(#{$img-path}startpage-header-bg.jpg);
   background-size: 100%;
-  padding-top: 150px;
+  padding-top: 50px;
   @media screen and (max-width: $small-devices) {
     height: 300px;
     padding-top: 100px;
