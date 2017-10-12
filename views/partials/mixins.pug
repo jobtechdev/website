@@ -16,7 +16,6 @@ mixin pages(page, submenu)
       'Assets': '/assets',
       'Platsbanken': '/assets/platsbanken',
       'Occupation': '/assets/occupations',
-      'Office Information': '/assets/office-information',
       'Historical Job Postings': '/assets/historical-job-postings',
       'Occupation Forecast': '/assets/occupation-forecasts',
       'Job market ontology': '/assets/ontology',
@@ -37,12 +36,10 @@ mixin product-menu(top, sub)
         li(class= sub === 2 ? 'active' : '')
           +pages('Occupation', true)
         li(class= sub === 3 ? 'active' : '')
-          +pages('Office Information', true)
-        li(class= sub === 4 ? 'active' : '')
           +pages('Historical Job Postings', true)
-        li(class= sub === 5 ? 'active' : '')
+        li(class= sub === 4 ? 'active' : '')
           +pages('Occupation Forecast', true)
-        li(class= sub === 6 ? 'active' : '')
+        li(class= sub === 5 ? 'active' : '')
           +pages('Job market ontology', true)
       //- li(class= top === 2 ? 'active' : '')
         a(href="http://historik.azurewebsites.net/" target="_blank") Historical Data Analysis
@@ -66,7 +63,6 @@ mixin breadbrumbs(...items)
             'Assets': '/assets',
             'Platsbanken': '/assets/platsbanken',
             'Occupation': '/assets/occupations',
-            'Office Information': '/assets/office-information',
             'Historical Job Postings': '/assets/historical-job-postings',
             'Occupation Forecast': '/assets/occupation-forecasts',
             'Job market ontology': '/assets/ontology',
