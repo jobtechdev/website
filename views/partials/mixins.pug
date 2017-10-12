@@ -19,6 +19,7 @@ mixin pages(page, submenu)
       'Office Information': '/assets/office-information',
       'Historical Job Postings': '/assets/historical-job-postings',
       'Occupation Forecast': '/assets/occupation-forecasts',
+      'Job market ontology': '/assets/ontology',
       // 'CV with MS Word': '/assets/cv-with-ms-word',
       // 'Open Hack': '/assets/open-hack',
       'Labour market competition': '/assets/labour-market-competition',
@@ -41,8 +42,8 @@ mixin product-menu(top, sub)
           +pages('Historical Job Postings', true)
         li(class= sub === 5 ? 'active' : '')
           +pages('Occupation Forecast', true)
-        li(class= sub === 5 ? 'active' : '')
-          +pages('Ontology', true)
+        li(class= sub === 6 ? 'active' : '')
+          +pages('Job market ontology', true)
       //- li(class= top === 2 ? 'active' : '')
         a(href="http://historik.azurewebsites.net/" target="_blank") Historical Data Analysis
       //- li(class= top === 3 ? 'active' : '')
@@ -68,6 +69,7 @@ mixin breadbrumbs(...items)
             'Office Information': '/assets/office-information',
             'Historical Job Postings': '/assets/historical-job-postings',
             'Occupation Forecast': '/assets/occupation-forecasts',
+            'Job market ontology': '/assets/ontology',
             // 'CV with MS Word': '/assets/cv-with-ms-word',
             // 'Open Hack': '/assets/open-hack',
             'Labour market competition': '/assets/labour-market-competition',
