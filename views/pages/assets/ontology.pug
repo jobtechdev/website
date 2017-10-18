@@ -11,11 +11,8 @@ block content
         .breadbrumbs-indent
             +breadbrumbs('Home', 'Assets', 'Job market ontology')
         +product-menu(1, 6)
+
         .product-content
-            h2 Job market ontology
-            .downloadable
-                p
-                    a(href='http://pilot.arbetsformedlingen.se/ontology/v1/?url=swagger.json#/Ontology' target='_blank') Swagger API View
-            .note
-                p NOTE: You can decide which format should be returned with the request header. <br> For JSON, the http request header must contain: “Accept: application/json” or else it will return xml.
+            .row.product-content-peruis
+                +product-content('Headerontologi.png', 'Job market ontology', 'Make smarter decisions with past data on job trends in various industry sectors', 'APPLICATION')
 

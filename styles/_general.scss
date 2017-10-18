@@ -106,7 +106,56 @@ h2 {
     }
   }
 }
+.product-content-peruis {
+  max-width: 100%;
+  margin: 0px ;
 
+  @media screen and (max-width: $medium-devices) {
+    max-width: 730px;
+  }
+
+  .product-content-perui {
+    width: 100%;
+    max-width: 100%;
+    margin: 0px;
+    height:100%;
+    border-radius: 5px;
+    overflow: scroll;
+    position: relative;
+    margin-bottom: 0px;
+
+
+    img {
+      width: 100%;
+      transition: all 0.2s;
+    }
+
+    .product-content-perui-text {
+      position: absolute;
+      bottom: 0;
+      background: red;
+      height: 140px;
+      padding: 0px;
+
+      .product-content-perui-title {
+        color: $black;
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: 0.4px;
+           }
+      .product-content-perui-description {
+        color: $gray;
+        font-size: 14px;
+      }
+      .product-content-perui-type {
+        color: #4a90e2;
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: 0.3px;
+      }
+    }
+  }
+}
 .breadbrumbs-indent {
   margin-left: 370px;
 

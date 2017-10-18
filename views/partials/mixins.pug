@@ -6,6 +6,14 @@ mixin puff(img, title, description, type)
       p.puff-description= description
       p.puff-type= type
 
+mixin product-content(img, title, description, type)
+  .product-content-perui
+    img(src="/images/" + img)
+    p.product-content-perui-title= title
+    .product-content-text
+      p.product-content-perui-description= description
+      p.product-content-perui-type= type
+
 mixin pages(page, submenu)
   -
     var pages = {
