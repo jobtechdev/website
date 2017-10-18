@@ -119,12 +119,23 @@ h2 {
     max-width: 100%;
     margin: 0px;
     height:100%;
+    background-color: #00dc32;
     border-radius: 5px;
     overflow: scroll;
     position: relative;
     margin-bottom: 0px;
 
 
+    .product-content-perui-title {
+      color: $black;
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: 0.4px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      width:100%;
+      height: 295px;
+   }
     img {
       width: 100%;
       transition: all 0.2s;
@@ -137,12 +148,6 @@ h2 {
       height: 140px;
       padding: 0px;
 
-      .product-content-perui-title {
-        color: $black;
-        font-size: 18px;
-        font-weight: 600;
-        letter-spacing: 0.4px;
-           }
       .product-content-perui-description {
         color: $gray;
         font-size: 14px;

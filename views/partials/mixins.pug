@@ -7,12 +7,13 @@ mixin puff(img, title, description, type)
       p.puff-type= type
 
 mixin product-content(img, title, description, type)
-  .product-content-perui
-    img(src="/images/" + img)
-    p.product-content-perui-title= title
-    .product-content-text
-      p.product-content-perui-description= description
-      p.product-content-perui-type= type
+  .row.product-content-peruis
+      .product-content-perui
+          div(style='background-image: url(/images/'+ img + ')').product-content-perui-title
+            p.product-content-perui-title= title
+          .product-content-text
+            p.product-content-perui-description= description
+            p.product-content-perui-type= type
 
 mixin pages(page, submenu)
   -
