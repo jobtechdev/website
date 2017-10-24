@@ -118,10 +118,8 @@ h2 {
     width: 100%;
     max-width: 100%;
     margin: 0px;
-    height:500px;
     background-color: #white;
     border-radius: 5px;
-    overflow: scroll;
     position: relative;
     margin-bottom: 0px;
 
@@ -153,16 +151,16 @@ h2 {
       position: relative;
       white-space: pre-line;
       background: white;
-      height: 140px;
       padding: 0px;
       margin:50px;
       float:left;
 
       .product-content-video {
         position: relative;
-        left:0px;
         float: right;
         white-space: pre-line;
+        margin-top:10px;
+        margin-bottom:10px;
 
       }
 
@@ -171,7 +169,8 @@ h2 {
         font-size: 14px;
         position: relative;
         white-space: pre-line;
-
+        margin-top:10px;
+        margin-bottom:10px;
       }
 
       .product-content-perui-type {
