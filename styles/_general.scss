@@ -153,7 +153,15 @@ h2 {
       background: white;
       padding: 0px;
       margin:50px;
-      float:left;
+      text-align: center;
+
+      .btn {
+        margin:10px;
+
+
+
+      }
+
 
       .product-content-video {
         position: relative;
@@ -161,6 +169,8 @@ h2 {
         white-space: pre-line;
         margin-top:10px;
         margin-bottom:10px;
+        text-align: left;
+
 
       }
 
@@ -171,6 +181,7 @@ h2 {
         white-space: pre-line;
         margin-top:10px;
         margin-bottom:10px;
+        text-align: left;
       }
 
       .product-content-perui-type {

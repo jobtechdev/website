@@ -6,7 +6,7 @@ mixin puff(img, title, description, type)
       p.puff-description= description
       p.puff-type= type
 
-mixin product-content(img, title, rubrik1,video, description, img2,text1,rubrik2,text2)
+mixin product-content(img, title, rubrik1,video, description, img2,text1,rubrik2,text2,text3)
   .row.product-content-peruis
       .product-content-perui
           div(style='background-image: url(/images/'+ img + ')').product-content-perui-title
@@ -26,8 +26,12 @@ mixin product-content(img, title, rubrik1,video, description, img2,text1,rubrik2
             .product-content-video
               h3=rubrik2
               p=text2
-              iframe(src='//pilot.arbetsformedlingen.se/kompetensutforskaren/#!/' Style='width:50%')
-
+          .product-content-perui-text.row
+            p=text3
+            a(href='http://pilot.arbetsformedlingen.se/ontology/v1/?url=swagger.json' target='_blank')
+              .btn.btn-success='Go to API'
+            a(href='http://ontologi.arbetsformedlingen.se/ontologi/#!/' target='_blank')
+              .btn.btn-info='Read more'
 
 
 
