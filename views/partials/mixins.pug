@@ -7,26 +7,26 @@ mixin puff(img, title, description, type)
       p.puff-type= type
 
 mixin product-content(img, title, rubrik1,video, description, img2,text1,rubrik2,text2,text3)
-  .row.product-content-peruis
-      .product-content-perui
-          div(style='background-image: url(/images/'+ img + ')').product-content-perui-title
-            p.product-content-perui-title-text= title
-          .product-content-perui-text.row
-            h3=rubrik1
-            .product-content-video
+  .row.product-content-subpages
+      .product-content-subpage
+          div(style='background-image: url(/images/'+ img + ')').product-content-subpage-title
+            p.product-content-subpage-title-text= title
+          .product-content-subpage-text.row
+            h3(style='text-align:left')=rubrik1
+            .product-content-right
               iframe(src=video)
-            .product-content-perui-description
+            .product-content-left
               p=description
-          .product-content-perui-text.row
-            div(style='width: 70%').product-content-video
+          .product-content-subpage-text.row
+            div(style='width: 70%').product-content-right
               p=text1
-            .product-content-perui-description
+            .product-content-left
               img(src="/images/" + img2 style='width:30%')
-          .product-content-perui-text.row
-            .product-content-video
+          .product-content-subpage-text.row
+            .product-content-right
               h3=rubrik2
               p=text2
-          .product-content-perui-text.row
+          .product-content-subpage-text.row
             p=text3
             a(href='http://pilot.arbetsformedlingen.se/ontology/v1/?url=swagger.json' target='_blank')
               .btn.btn-success='Go to API'

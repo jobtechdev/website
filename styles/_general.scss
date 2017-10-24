@@ -106,7 +106,7 @@ h2 {
     }
   }
 }
-.product-content-peruis {
+.product-content-subpages {
   max-width: 100%;
   margin: 0px ;
 
@@ -114,7 +114,7 @@ h2 {
     max-width: 730px;
   }
 
-  .product-content-perui {
+  .product-content-subpage {
     width: 100%;
     max-width: 100%;
     margin: 0px;
@@ -124,7 +124,7 @@ h2 {
     margin-bottom: 0px;
 
 
-    .product-content-perui-title {
+    .product-content-subpage-title {
       color: $white;
       font-size: 18px;
       font-weight: 600;
@@ -135,7 +135,7 @@ h2 {
       height: 150px;
 
    }
-    .product-content-perui-title-text {
+    .product-content-subpage-title-text {
       color: $white;
       padding: 35px 0px 0px 95px;
       font-size: 20px;
@@ -147,7 +147,7 @@ h2 {
     }
 
 
-    .product-content-perui-text {
+    .product-content-subpage-text {
       position: relative;
       white-space: pre-line;
       background: white;
@@ -163,7 +163,7 @@ h2 {
       }
 
 
-      .product-content-video {
+      .product-content-right {
         position: relative;
         float: right;
         white-space: pre-line;
@@ -174,7 +174,7 @@ h2 {
 
       }
 
-      .product-content-perui-description {
+      .product-content-left {
         color: $gray;
         font-size: 14px;
         position: relative;
