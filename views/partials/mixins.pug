@@ -1,6 +1,6 @@
-mixin puff(img, title, description, type)
+mixin puff(img, title, description, type, imgSize)
   .puff
-    img(src="/images/" + img)
+    img(src="/images/" + img, style="width: " + (imgSize || '120%'))
     .puff-text
       p.puff-title= title
       p.puff-description= description
