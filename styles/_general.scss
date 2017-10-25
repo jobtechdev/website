@@ -109,6 +109,8 @@ h2 {
 .product-content-subpages {
   max-width: 100%;
   margin: 0px ;
+  box-shadow: 3px 20px 30px darkgrey;
+
 
   @media screen and (max-width: $medium-devices) {
     max-width: 730px;
@@ -155,6 +157,7 @@ h2 {
       margin:50px;
       text-align: center;
 
+
       .btn {
         margin:10px;
 
@@ -164,12 +167,14 @@ h2 {
 
 
       .product-content-right {
+        z-index: 1;
         position: relative;
         float: right;
         white-space: pre-line;
         margin-top:10px;
         margin-bottom:10px;
         text-align: left;
+        margin: 10px;
 
 
       }
