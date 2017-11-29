@@ -1,0 +1,47 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Jobtech Developer</title><link rel="shortcut icon" href="/favicon.ico?v=2" type="image/x-icon"><link rel="icon" href="favicon.ico?v=2" type="image/x-icon"><link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet"><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><link rel="stylesheet" type="text/css" href="/styles/styles.css"><script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script><script src="//cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script><script src="js/cookie.js"></script></head><body><div class="eupopup eupopup-block"></div><nav class="navbar navbar-default"><div class="container-fluid"><div class="navbar-header"><button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="/"><img src="/images/jobtechlogo.png"></a></div><div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"><ul class="nav navbar-nav"><li><a href="/assets">Assets<span class="sr-only">(current)</span></a></li><li><a href="/Platform">Platform</a></li><li><a href="/showcase">Showcase</a></li><li><a href="/news">News</a></li><!--li--><!-- a(href="#login-box" class="login-window") Login / Sign In--></ul></div></div></nav><div class="jumbotron"><div class="container"><h1 class="tagline">JobTech Developer</h1><p class="subtitle">Powerful APIs, widgets and datasets for you to develop the missing app</p></div></div><div class="container-fluid work-in-progress"><div class="row"><div class="col-lg-12"><p>We invite you to explore JobTech and give us your valuable feedback. <a href="mailto:jobtechdev@arbetsformedlingen.se">Email us</a></p></div></div></div><!--.container-fluid.our-products--><!--  //- .row--><!--  //-   .col-sm-12--><!--  //-     h2.section-header.text-center Explore our products--><!--  //-     p.section-description.text-center A collection of open APIs from the Swedish Public Employment Service, Arbetsförmedlingen--><!--  .row.puffs--><!--    .col-sm-6.col-md-4.col-lg-3--><!--      a(href="/assets/platsbanken")--><!--        +puff('api-puff.jpg', 'Platsbanken', 'All the current job postings available on Platsbanken', 'API')--><!--    .col-sm-6.col-md-4.col-lg-3--><!--      a(href="/assets/historical-job-postings")--><!--        +puff('data-analysis-puff.jpg', 'Historical Job Postings', 'All job postings from Platsbanken 2006-2016', 'DATASETS')--><!--    .col-sm-6.col-md-4.col-lg-3--><!--      a(href="/assets/occupations")--><!--        +puff('occupation-puff.jpg', 'Occupation', 'Occupational description of 450 different occupations, with forecasts', 'API')--><!--    .col-sm-6.col-md-4.col-lg-3.hidden-md--><!--      a(href="/assets/occupation-forecasts")--><!--        +puff('dev-services-puff.jpg', 'Occupation Forecasts', 'Short and long-term forecasts of labour demand for different occupations', 'API')--><!----><!--  a(href="/assets").button.view-products View all assets--><div class="container-fluid our-vision"><div class="row"><div class="col-md-6"><div class="box"><img class="img-responsive" src="/images/vision-startpage.jpg"></div></div><div class="col-md-6 col-lg-4"><div class="box vertical-align"><div class="center-when-mobile"><h2 class="section-header">Our vision</h2><p class="section-description"><div><p><b>It´s quite simple.</b></p><p>Every day a person goes to a job they dislike or have no job to go to at all, is a loss. Not only for the individual, but also for the employer who has the potential to grow if they find the right person. This Sweden can not afford. </p><p>We belive in using technology to let people connect in new ways. It will help people find their dream job and it will make employers find top candidates easier. By this our collective talents are better used and Sweden becomes a better place to live in.</p></div></p></div></div></div></div></div><div class="container-fluid principles"><div class="row"><div class="col-md-6 col-lg-4"><div class="box vertical-align"><div class="center-when-mobile"><h2 class="section-header">Guiding principles</h2><p class="section-description"><div><p>No matter what we do, these principles will guide us:</p><p></p><li><b>Collaborate</b> - Work with others, they know something you do not know.</li><li><b>Diversity by design</b> - Everyone is unique; one-size solution does not fit all. </li><li><b>Keep it simple</b> - If people understand, they can contribute!</li></div></p></div></div></div><div class="col-md-6"><div class="box"><img class="img-responsive" src="/images/compass-startpage.jpg"></div></div></div></div><script>$('.box').matchHeight();</script><footer><div class="social-media"><p>Follow us:</p><a href="https://twitter.com/jobtechdev" target="_blank"><img src="/images/social/Twitter_White.png"></a><a href="https://github.com/jobtechdev" target="_blank"><img src="/images/social/GitHub_White.png"></a></div><div class="powered-by"><p><a href="#">Terms & Conditions</a></p><p></p></div></footer><script>$(function() {
+    FastClick.attach(document.body);
+
+    $('.collapse').on('show.bs.collapse hide.bs.collapse', function(e) {
+        e.preventDefault();
+    });
+    $('[data-toggle="collapse"]').on('click', function(e) {
+        e.preventDefault();
+        $($(this).data('target')).toggleClass('in');
+        if($(this).attr("id") !="test"){
+           $('.navbar-default .container-fluid').toggleClass('dark-bg');
+        }
+    });
+});
+</script><d class="login-popup" id="login-box"><a class="login_close" href="#"><img class="login_btn_close" src="/images/close_pop.png" title="Close Window" alt="Close"></a><form class="signin" method="post" action="#"><fieldset class="textbox"><label class="username"><span>Username or email</span><input id="username" name="username" value="" type="text" autocomplete="on" placeholder="Username"></label><label class="password"><span>Password</span><input id="password" name="pasword" value="" type="password" placeholder="Password"></label><button class="submit login_button" type="button">Sign in</button><d><img src="/images/google.png" height="25" width="25"></d><p><a class="forgot" href="#">Forgot your password?</a></p></fieldset></form></d><script>$(document).ready(function() {
+    $('a.login-window').click(function () {
+
+        //Getting the variable's value from a link
+        var loginBox = $(this).attr('href');
+
+        //Fade in the Popup
+        $(loginBox).fadeIn(300);
+
+        //Set the center alignment padding + border see css style
+        var popMargTop = ($(loginBox).height() + 24) / 2;
+        var popMargLeft = ($(loginBox).width() + 24) / 2;
+
+        $(loginBox).css({
+            'margin-top': -popMargTop,
+            'margin-left': -popMargLeft
+        });
+
+        // Add the mask to body
+        $('body').append('<div id="mask"></div>');
+        $('#mask').fadeIn(300);
+
+        return false;
+    });
+
+    // When clicking on the button close or the mask layer the popup closed
+    $(document).on('click','a.login_close, #mask', function () {
+        $('#mask , .login-popup').fadeOut(300, function () {
+            $('#mask').remove();
+        });
+        return false;
+    });
+});</script></body></html>

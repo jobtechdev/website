@@ -1,0 +1,47 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Jobtech Developer</title><link rel="shortcut icon" href="/favicon.ico?v=2" type="image/x-icon"><link rel="icon" href="favicon.ico?v=2" type="image/x-icon"><link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet"><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><link rel="stylesheet" type="text/css" href="/styles/styles.css"><script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script><script src="//cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script><script src="js/cookie.js"></script></head><body><div class="eupopup eupopup-block"></div><nav class="navbar navbar-default"><div class="container-fluid"><div class="navbar-header"><button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="/"><img src="/images/jobtechlogo.png"></a></div><div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"><ul class="nav navbar-nav"><li><a href="/assets">Assets<span class="sr-only">(current)</span></a></li><li><a href="/Platform">Platform</a></li><li><a href="/showcase">Showcase</a></li><li><a href="/news">News</a></li><!--li--><!-- a(href="#login-box" class="login-window") Login / Sign In--></ul></div></div></nav><header class="products"><h1 class="page-title">Assets</h1></header><div class="product-wrapper"><div class="breadbrumbs-indent"><ol class="breadcrumb"><li><a href="/">Home</a></li><li><a href="/assets">Assets</a></li><li class="active">CV with MS Word</li></ol></div><div class="product-menu"><ul><li><a href="/assets">Assets</a></li><ul class="sublist"><li><a href="/assets/platsbanken">&gt; Platsbanken</a></li><li><a href="/assets/occupations">&gt; Occupation</a></li><li><a href="/assets/historical-job-postings">&gt; Historical Job Postings</a></li><li><a href="/assets/occupation-forecasts">&gt; Occupation Forecast</a></li><li><a href="/assets/ontology">&gt; Job market ontology</a></li></ul></ul></div><div class="product-content"><h2>CV with MS Word</h2></div></div><footer><div class="social-media"><p>Follow us:</p><a href="https://twitter.com/jobtechdev" target="_blank"><img src="/images/social/Twitter_White.png"></a><a href="https://github.com/jobtechdev" target="_blank"><img src="/images/social/GitHub_White.png"></a></div><div class="powered-by"><p><a href="#">Terms & Conditions</a></p><p></p></div></footer><script>$(function() {
+    FastClick.attach(document.body);
+
+    $('.collapse').on('show.bs.collapse hide.bs.collapse', function(e) {
+        e.preventDefault();
+    });
+    $('[data-toggle="collapse"]').on('click', function(e) {
+        e.preventDefault();
+        $($(this).data('target')).toggleClass('in');
+        if($(this).attr("id") !="test"){
+           $('.navbar-default .container-fluid').toggleClass('dark-bg');
+        }
+    });
+});
+</script><d class="login-popup" id="login-box"><a class="login_close" href="#"><img class="login_btn_close" src="/images/close_pop.png" title="Close Window" alt="Close"></a><form class="signin" method="post" action="#"><fieldset class="textbox"><label class="username"><span>Username or email</span><input id="username" name="username" value="" type="text" autocomplete="on" placeholder="Username"></label><label class="password"><span>Password</span><input id="password" name="pasword" value="" type="password" placeholder="Password"></label><button class="submit login_button" type="button">Sign in</button><d><img src="/images/google.png" height="25" width="25"></d><p><a class="forgot" href="#">Forgot your password?</a></p></fieldset></form></d><script>$(document).ready(function() {
+    $('a.login-window').click(function () {
+
+        //Getting the variable's value from a link
+        var loginBox = $(this).attr('href');
+
+        //Fade in the Popup
+        $(loginBox).fadeIn(300);
+
+        //Set the center alignment padding + border see css style
+        var popMargTop = ($(loginBox).height() + 24) / 2;
+        var popMargLeft = ($(loginBox).width() + 24) / 2;
+
+        $(loginBox).css({
+            'margin-top': -popMargTop,
+            'margin-left': -popMargLeft
+        });
+
+        // Add the mask to body
+        $('body').append('<div id="mask"></div>');
+        $('#mask').fadeIn(300);
+
+        return false;
+    });
+
+    // When clicking on the button close or the mask layer the popup closed
+    $(document).on('click','a.login_close, #mask', function () {
+        $('#mask , .login-popup').fadeOut(300, function () {
+            $('#mask').remove();
+        });
+        return false;
+    });
+});</script></body></html>
